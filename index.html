@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/estilos.css">
+		<title>Sitio de peliculas</title>
+	</head>
+
+	<body>
+		<div id="loading">
+			<div class="loader"></div>
+		</div>
+
+		<nav class="navbar" id="myNavbar">
+			<a id="nowPlaying">En cartelera</a>
+			<a id="popular">Populares</a>
+			<a id="topRated">Mejor Clasificadas</a>
+			<a id="upcoming">Próximamente</a>
+			<a href="#" disabled class="icon" id="boton" >&#9776;</a>
+		</nav>
+		<div class="container" id="container">
+			<main class="principal" id="principal"></main>
+		</div>
+
+		<div class="paginacion">
+			<a id="btnAnterior">Anterior</a>
+			<a id="btnSiguiente">Siguiente</a>
+		</div>
+
+		<script type="module" src="js/index.js"></script>
+	</body>
+</html>

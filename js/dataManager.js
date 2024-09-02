@@ -26,9 +26,9 @@ const options = {
 //     .catch(err => console.error(err));
 // }
 
-export async function cargarPeliculasAsync(){
+export async function cargarPeliculasAsync(pagina){
     try {    
-        const response = await fetch('https://api.themoviedb.org/3/movie/now_playing?language=es-%20ES&page=1', options)
+        const response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?language=es-%20ES&page=${pagina}`, options)
 
         if (!response.ok){
             throw new Error('No se pudo obtener las películas')
